@@ -9,8 +9,9 @@
 	<dubbo:application name="travelPortal"/>
 	
 	<!-- 配置注册中心 -->
-	<dubbo:registry address="zookeeper://10.12.153.70:2181"></dubbo:registry>
+	<dubbo:registry address="zookeeper://10.12.153.37:2181"></dubbo:registry>
 	
 	<!-- 获取提供方所提供的接口数据 -->
 	<dubbo:reference interface="com.vip.service.StuService" id="stuService"></dubbo:reference>
+	<dubbo:reference interface="com.vip.service.StrategyService" id="strategyService"></dubbo:reference>
 </beans>
